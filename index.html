@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div style="width: 100%; display: table;">
+            <div style="display: table-row;">
+                <div style="width:100%; display: table-cell;">
+                    <a href="https://github.com/d-vafi/d-vafi.357.github.io">
+                        <img style=" width: 30px; height: 30px;  margin-top: 1.5em;  margin-bottom: 0.5em;"
+                            src="github-icon.png" alt="github icon">
+                    </a>
+                    <h1> zHealth</h1>
+                    <h2> <i>Not Your Average Health Companion</i> </h2>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <a >
+            <img style="margin-top: 1.5em;  margin-bottom: 0.5em;"
+                src="zHealth.png" alt="zHealth logo">
+        </a>
+        <section>
+            <h1> Introduction </h1>
+            <p>
+                This a case study on the UX/UI design of a health companion super app, zHealth. <br>
+                The goal is to help people suffering from chronic diseases
+                track their health and fitness, <br>by offering a convenient, yet powerful application.
+                <br>This app will help them manage medication, track vitals,
+                set reminders or schedules, and have real time communication with healthcare professionals. <br>Below is
+                the
+                research done on potential users, personas, and all the design stages of the app.
+
+            </p>
+        </section>
+        <section>
+            <!--
+            https://www.statista.com/statistics/1350038/health-and-fitness-apps-usage/#:~:text=In%20comparison%2C%20health%20apps%2C%20workout,COVID%2D19%20pandemic%20global%20outbreak. 
+            -->
+            <!--
+            https://pmc.ncbi.nlm.nih.gov/articles/PMC9247815/
+            Paradis S, Roussel J, Bosson JL, Kern JB. Use of Smartphone Health Apps Among Patients Aged 18 to 69 Years in Primary Care: Population-Based Cross-sectional Survey. JMIR Form Res. 2022 Jun 16;6(6):e34882. doi: 10.2196/34882. PMID: 35708744; PMCID: PMC9247815. 
+            -->
+            <h1> User Research </h1>
+            <p>
+                According to a survey, the number of health and fitness app users has increased by
+                27% in 2020,
+                with 45% of the users being between the ages of 18-29. <a href ="https://www.statista.com/statistics/1350038/health-and-fitness-apps-usage/#:~:text=In%20comparison%2C%20health%20apps%2C%20workout,COVID%2D19%20pandemic%20global%20outbreak. 
+                ">[1]</a> <br>
+                The most common reasons for using these apps are to track physical activity,
+                monitor diet, and lose weight. The most popular health apps are MyFitnessPal, Fitbit, and Samsung
+                Health. 
+                <br>
+                <br>
+                A study conducted by Paradis et al. found that 60% of patients aged 18-69 use health apps, with the most
+                common reasons being to track physical activity,
+                monitor diet, and lose weight. The most popular health apps are MyFitnessPal, Fitbit, and Samsung
+                Health. <a href ="https://pmc.ncbi.nlm.nih.gov/articles/PMC9247815/">[2]</a>
+                <br>
+
+            <p>
+                This particular project is quite relevant to me for many reasons. My 55 year-old father actually suffers
+                from type 2 diabetes, and I have seen first hand how difficult it is to manage the disease. This is why
+                I chose
+                to interview him to get a better look into the point of view of a potential user. The second person I
+                chose to interview
+                was my neighbor, who is currently making use of a pacemaker to treat his heart failure. He is in in mid
+                70's, and suffers
+                from Bradychardia.
+            </p>
+
+            <h2> Interview with a Diabetic </h2>
+            <p>For context, my father is a cloud software architect, who had suffered from diabetes ever since he was in
+                his early twenties.
+            </p>
+            <p><i>"Q: Have you used a Health Application such as Apple Health, Samsung Health, or any other app before?
+                    <br>
+                    If you have, tell me what was the most convenient and inconvenient features about it."</i> </p>
+            <p><i>"A: Yes. I have used Samsung Health and have also tried to use a FitBit to track my health. <br>
+                    The main issue with them is the clutter. I can't find what I need most of the time because the
+                    important info <br>
+                    is buried God knows where."</i> </p>
+            <p><i>"Q: What's the first thing you look for in terms of health metrics regarding your illness? <br>
+                    Say you open the app, what's your priority?"</i> </p>
+            <p><i>"A: Well, first thing in the morning, I need my insulin. Then, I need to read my blood sugar
+                    levels.<br>
+                    I'd like the first thing I see to be some kind of schedule or a checklist. <br>
+                    I don't really bother looking at anything else until I've done those two things."</i> </p>
+            <p><i>"Q: Are you a forgetful person when it comes to daily tasks like exercising, or taking medication...?
+                    <br>
+                    If so, what would you look for in an application to help mitigate this? "</i> </p>
+            <p><i>"A: Yes. The older I get, the more I neglect certain things. Notifications and alerts to my phone
+                    don't help. <br>
+                    I get hundreds of notifications a day, so I'm likely to ignore those. <br>
+                    If I'm going to get an alert, it'd have to be inside the app. "</i> </p>
+            <p><i>"Q: How often do you consult healthcare professionals for medical advice? "</i> </p>
+            <p><i>"A: Every few months. But I usually get information on YouTube or from online health blogs."</i> </p>
+            <p><i>"Q: For the next possible features, answer with either "Very Useful", "Useful", "Occasionally Useful",
+                    "Not Useful". <br>
+                    The ability to have a live chat with a healthcare professional"</i> </p>
+            <p><i>"A: Very Useful."</i> </p>
+            <p><i>"Q: &mdash; an AI-powered chat-bot that feeds information directly from the internet?"</i> </p>
+            <p><i>"A: Occasionally Useful, but the info would have to be very credible. I'd rather speak to a real
+                    expert."</i> </p>
+            <p><i>"Q: &mdash; A personalized training routine based on your sugar levels?"</i> </p>
+            <p><i>"A: Not Useful. I often need help with my diet, not my exercise routine."</i> </p>
+            <p><i>"Q: &mdash; Based on your last response, would a feature that allows you to track your diet<br>
+                    and suggest meals based on your blood sugar levels be useful?"</i> </p>
+            <p><i>"A: Yes, Very Useful. If I can have a breakfast-to-supper itineray, that'd save me a lot of time."</i>
+            </p>
+            <br>
+            <h2> Interview with a 70-Year-Old Man with Heart Failure Issues </h2>
+            <p>For context, my neighbor has worked in construction nearly his whole life. He has little experience with
+                technology.</p>
+            </p>
+            <p><i>"Q: Have you used a Health Application such as Apple Health, Samsung Health, or any other app before?
+                    <br>
+                    If you have, tell me what was the most convenient and inconvenient features about it."</i> </p>
+            <p><i>"A: Yes, I’ve tried using Apple Health before, mostly because my kids set it up for me. <br>
+                    I found it difficult to navigate. There’s just too much information all over the place, and it feels
+                    cluttered. <br>
+                    I struggled to find my heart rate and medication reminders easily. <br>
+                    Also, the text is too small sometimes, and my eyesight isn’t as good as it used to be."</i> </p>
+            <p><i>"Q: What's the first thing you look for in terms of health metrics regarding your heart condition?
+                    <br>Say you open the app, what's your priority?"</i> </p>
+            <p><i>"A: I need to check my blood pressure and heart rate first thing in the morning. <br>
+                    After that, I look at my medication schedule to make sure I take everything on time. <br>
+                    Sometimes I also want to see my weight because my doctor told me to watch for sudden changes. <br>
+                    If all of that could be on one screen, it’d be much easier."</i> </p>
+            <p><i>"Q: Are you a forgetful person when it comes to daily tasks like exercising or taking medication? <br>
+                    If so, what would you look for in an application to help mitigate this?"</i> </p>
+            <p><i>"A: Yes, I forget quite often. Especially when my day gets busy or I’m distracted. <br>
+                    I'm bad with phones, and sometimes I just swipe them away without thinking. <br>
+                    If the app could remind me as soon as I open it, that would be better. Maybe a checklist I can’t
+                    ignore."</i> </p>
+            <p><i>"Q: How often do you consult healthcare professionals for medical advice?"</i> </p>
+            <p><i>"A: Every two months or so, mostly for check-ups and medication adjustments. But I do have questions
+                    in between visits. <br>
+                    Sometimes I call my doctor, but I don’t want to bother him too much, so I just look things up
+                    online."</i> </p>
+            <p><i>"Q: For the next possible features, answer with either "Very Useful", "Useful", "Occasionally Useful",
+                    or "Not Useful." <br>
+                    — The ability to have a live chat with a healthcare professional "</i> </p>
+            <p><i>"A: Very Useful. It would be reassuring to get advice without having to go to the clinic. "</i> </p>
+            <p><i>"— An AI-powered chat-bot that feeds information directly from the internet?"</i> </p>
+            <p><i>"A: I don't know what that is. Not useful."</i> </p>
+            <p><i>"— A personalized exercise routine based on your heart rate and blood pressure? "</i> </p>
+            <p><i>"A: Useful, but it would need to be safe. My doctor told me to avoid certain exercises, so it should
+                    take that into account."</i> </p>
+            <p><i>"— A feature that allows you to track your diet and suggests heart-healthy meals?"</i> </p>
+            <p><i>"A: Very Useful. I have dietary restrictions because of my heart, and it’s hard to keep track of
+                    sodium and cholesterol."</i> </p>
+            <p><i>"— Daily reminders for medication and hydration?"</i></p>
+            <p><i>"A: Very Useful. Especially if it’s on the main screen, so I don’t forget."</i></p>
+            <p><i>"— A weight tracking feature that alerts you if there’s a sudden increase?"</i></p>
+            <p><i>"A: Very Useful. My doctor warned me about sudden weight gain due to fluid retention, so this would be
+                    very helpful."</i></p>
+            <p><i>"Q: Do you have any other concerns or needs you’d like a health app to address?"</i></p>
+            <p><i>"A: It would be great if it were easy to read and simple to use. I don’t need a lot of fancy features.
+                    Just the basics."</i></p>
+
+
+            </p>
+        </section>
+        <section>
+            <h1> User Personas </h1>
+            <p> Based off the info done through my research and interview process, here are the user personas for this
+                application. </p>
+
+            <!-- Mary Thompson -->
+            <img src="persona_mary.png" alt="Mary Thompson">
+            <h2 class="persona-title"> Mary Thompson </h2>
+            <p><strong>Age:</strong> 65</p>
+            <p><strong>Occupation:</strong> Retired Teacher</p>
+            <p><strong>Health Condition:</strong> Type 2 Diabetes, Hypertension</p>
+            <p><strong>Tech Proficiency:</strong> Moderate – Uses smartphone for basic tasks</p>
+
+            <h3 style="text-align: center;">Goals:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Maintain consistent medication routine</li>
+                <li>Track blood sugar and blood pressure levels</li>
+                <li>Avoid complications related to diabetes and hypertension</li>
+                <li>Communicate easily with her doctor</li>
+            </ul>
+            <h3 style="text-align: center;">Motivations:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Staying healthy to spend time with grandchildren</li>
+                <li>Reducing anxiety about forgetting medication</li>
+                <li>Gaining a better understanding of her health trends</li>
+            </ul>
+            <h3 style="text-align: center;">Pain Points:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Difficulty remembering medication times</li>
+                <li>Frustration with manually logging health data</li>
+                <li>Limited mobility for frequent clinic visits</li>
+            </ul>
+            <h3 style="text-align: center;"> How they would use the app</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Set reminders for her daily medication and insulin doses</li>
+                <li>Log blood sugar and blood pressure readings</li>
+                <li>Share health reports directly with her healthcare provider before virtual appointments</li>
+                <li>Receive alerts for upcoming doctor appointments and medication refills</li>
+            </ul>
+            <br>
+            <!-- Kate Kateson -->
+            <img src="persona_kate.png" alt="Kateson">
+            <h2 class="persona-title"> Kate Kateson </h2>
+            <p><strong>Age:</strong> 28</p>
+            <p><strong>Occupation:</strong> Full-time Caregiver (for her mother) </p>
+            <p><strong>Health Condition:</strong> Alzheimer’s Disease </p>
+            <p><strong>Tech Proficiency:</strong> High – Familiar with social media and utility apps</p>
+
+            <h3 style="text-align: center;">Goals:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Manage her mother’s complex medication schedule</li>
+                <li>Keep track of medical appointments and notes from doctors</li>
+                <li>Communicate with multiple healthcare providers</li>
+                
+            </ul>
+            <h3 style="text-align: center;">Motivations:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Ensure her mother’s safety and health stability</li>
+                <li>Reduce caregiver stress by organizing all health information in one place</li>
+                <li>Feel more confident and in control of her caregiving responsibilities</li>
+            </ul>
+            <h3 style="text-align: center;">Pain Points:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Overwhelmed by the number of medications and varying schedules</li>
+                <li>Difficulty coordinating care among different specialists</li>
+                <li>Emotional strain of caregiving and fear of missing important health updates</li>
+            </ul>
+            <h3 style="text-align: center;"> How they would use the app</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Set detailed reminders for her mother’s medications, including dose instructions</li>
+                <li>Track symptoms and behavioral changes to discuss with doctors</li>
+                <li>Access emergency contact information and health history quickly</li>
+            </ul>
+            <!-- Richard Evans -->
+            <img src="persona_rich.png" alt="Rich">
+            <h2 class="persona-title"> Rich Evans </h2>
+            <p><strong>Age:</strong> 66 </p>
+            <p><strong>Occupation:</strong> Financial Crime Analyst </p>
+            <p><strong>Health Condition:</strong> Post-Heart Attack Recovery </p>
+            <p><strong>Tech Proficiency:</strong> High (Uses wearables and multiple health apps) </p>
+
+            <h3 style="text-align: center;">Goals:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Monitor physical activity safely.</li>
+                <li>Track recovery progress with health metrics like heart rate variability.</li>
+                <li>Access educational resources about heart-healthy exercises.</li>
+                
+            </ul>
+            <h3 style="text-align: center;">Motivations:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Regain strength and confidence after his heart attack.</li>
+                <li>Avoid future cardiac events by staying informed and proactive.</li>
+            </ul>
+            <h3 style="text-align: center;">Pain Points:</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Finds general fitness apps unhelpful for heart-specific recovery.</li>
+                <li>Feels uncertain about which activities are safe.</li>
+                <li>Wants to avoid information overload but needs credible resources.</li>
+            </ul>
+            <h3 style="text-align: center;"> How they would use the app</h3>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li>Would use personalized exercise plans that adapt to his heart rate.</li>
+                <li>Needs educational content on safe post-heart attack recovery.</li>
+                <li>Would track progress through detailed health reports to discuss with his cardiologist.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1> User Journey Map </h1>
+        </section>
+        <section>
+            <h1> Storyboard </h1>
+        </section>
+        <section>
+            <h1> User Flow Diagram </h1>
+        </section>
+        <section>
+            <h1> Storyboard </h1>
+        </section>
+        <section>
+            <h1> Wireframes </h1>
+        </section>
+        <section>
+            <h1> Visual Design </h1>
+        </section>
+        <section>
+            <h1> Final Prototype </h1>
+        </section>
+        <section>
+            <h1> Conclusion </h1>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
