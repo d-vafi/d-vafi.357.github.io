@@ -41,6 +41,16 @@ section {
     padding: 2%;
     
 }
+iframe {
+    /* Make Center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #f4f4f4;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
 section h1{
     /* Make Center */
     display: flex;
@@ -172,6 +182,16 @@ ul, ol {
 
 ul li, ol li {
     margin-bottom: 0.5em;
+    justify-content: center;
+    align-items: center;
+
+}
+ul {
+    justify-content: center;
+    align-items: center;
+    
+}
+li {
     justify-content: center;
     align-items: center;
 
